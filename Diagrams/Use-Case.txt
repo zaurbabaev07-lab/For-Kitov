@@ -1,0 +1,49 @@
+@startuml
+left to right direction
+
+actor "Посетитель" as Visitor
+actor "Клиент" as Client
+actor "Администратор" as Admin
+actor "Сотрудник" as Employee
+
+rectangle "Система кафе" {
+  usecase "Авторизироваться/Регистрироваться" as UC1
+  usecase "Сделать заказ/Изменять его" as UC2
+  usecase "Просматривать контакты" as UC3
+  usecase "Забронировать стол/Запланировать мероприятие" as UC4
+  usecase "Оставить отзыв" as UC5
+  usecase "Получить информацию о брони столов" as UC6
+  usecase "Редактировать информацию о кафе" as UC7
+  usecase "Редактировать меню" as UC8
+  usecase "Отследить статистику" as UC9
+  usecase "Информация о работниках" as UC10
+  usecase "Информация о клиентах" as UC11
+  usecase "Информация о заказах" as UC12
+}
+
+Visitor --> UC1
+Visitor --> UC3
+Visitor --> UC5
+
+Client --> UC1
+Client --> UC2
+Client --> UC3
+Client --> UC4
+Client --> UC5
+Client --> UC6
+
+Admin --> UC1
+Admin --> UC7
+Admin --> UC8
+Admin --> UC9
+Admin --> UC10
+Admin --> UC11
+Admin --> UC12
+
+Employee --> UC1
+Employee --> UC6
+Employee --> UC10
+Employee --> UC11
+Employee --> UC12
+
+@enduml
