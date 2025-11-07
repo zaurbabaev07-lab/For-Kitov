@@ -29,3 +29,5 @@
 •	 Data Layer \
     o	Data Access \
     o	Database 
+
+![Use-case](Pictures/
