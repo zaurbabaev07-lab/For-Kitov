@@ -30,4 +30,4 @@
     o	Data Access \
     o	Database 
 
-![Use-case](https://github.com/zaurbabaev07-lab/For-Kitov/blob/master/Pictures/Use-case.png)
+![Use-case](https://github.com/zaurbabaev07-lab/For-Kitov/blob/master/%D0%A2%D0%90%D0%91%D0%9B%D0%98%D0%A6%D0%90%D0%90%D0%90%D0%90.png)
